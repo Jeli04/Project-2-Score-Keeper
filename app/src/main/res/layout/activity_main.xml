@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:gravity="center"
+        android:text="Valorant VCT 3 Tracker" />
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/team1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/gambit"
+            app:backgroundTint="#FF0101" />
+
+        <Button
+            android:id="@+id/team2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/SuperMassizeBlaze" />
+
+        <Button
+            android:id="@+id/team3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/acend" />
+
+        <Button
+            android:id="@+id/team4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/G2Esports"/>
+
+        <Button
+            android:id="@+id/team5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/Sentinals"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/team6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:background="@drawable/thieves100"/>
+
+        <Button
+            android:id="@+id/team7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:background="@drawable/Envy"/>
+
+        <Button
+            android:id="@+id/team8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:background="@drawable/KRU"/>
+        <Button
+            android:id="@+id/team9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:background="@drawable/KeydStars"/>
+
+        <Button
+            android:id="@+id/team10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:background="@drawable/HavanLiberty"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/competitor1"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="TEAM 1"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/team1info"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <ImageView
+            android:id="@+id/team1logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:text="Score: " />
+
+            <Button
+                android:id="@+id/updateScore1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="Update Score " />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/competitor2"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="TEAM 2"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/team2info"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:text="Score: " />
+
+            <Button
+                android:id="@+id/updateScore2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="Update Score " />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
