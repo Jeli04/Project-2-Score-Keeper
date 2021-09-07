@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="69dp"
         android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
         android:text="Valorant VCT 3 Tracker" />
 
     <LinearLayout
@@ -37,7 +39,7 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_weight="0.5"
-            android:background="@drawable/SuperMassizeBlaze" />
+            android:background="@drawable/gambit" />
 
         <Button
             android:id="@+id/team3"
@@ -55,7 +57,7 @@
             android:layout_weight="0.5"
             android:layout_margin="10dp"
             android:layout_gravity="center"
-            android:background="@drawable/G2Esports"/>
+            android:background="@drawable/gambit"/>
 
         <Button
             android:id="@+id/team5"
@@ -64,7 +66,7 @@
             android:layout_weight="0.5"
             android:layout_margin="10dp"
             android:layout_gravity="center"
-            android:background="@drawable/Sentinals"/>
+            android:background="@drawable/gambit"/>
 
     </LinearLayout>
 
@@ -88,7 +90,7 @@
             android:layout_height="50dp"
             android:layout_weight="0.5"
             android:layout_margin="10dp"
-            android:background="@drawable/Envy"/>
+            android:background="@drawable/gambit"/>
 
         <Button
             android:id="@+id/team8"
@@ -96,14 +98,14 @@
             android:layout_height="50dp"
             android:layout_weight="0.5"
             android:layout_margin="10dp"
-            android:background="@drawable/KRU"/>
+            android:background="@drawable/gambit"/>
         <Button
             android:id="@+id/team9"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="0.5"
             android:layout_margin="10dp"
-            android:background="@drawable/KeydStars"/>
+            android:background="@drawable/gambit"/>
 
         <Button
             android:id="@+id/team10"
@@ -111,7 +113,7 @@
             android:layout_height="50dp"
             android:layout_weight="0.5"
             android:layout_margin="10dp"
-            android:background="@drawable/HavanLiberty"/>
+            android:background="@drawable/gambit"/>
     </LinearLayout>
 
     <TextView
@@ -131,7 +133,7 @@
 
         <ImageView
             android:id="@+id/team1logo"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             tools:srcCompat="@tools:sample/avatars" />
@@ -148,7 +150,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textSize="25dp"
-                android:text="Score: " />
+                android:text="Score: 0" />
 
             <Button
                 android:id="@+id/updateScore1"
@@ -177,7 +179,7 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             tools:srcCompat="@tools:sample/avatars" />
@@ -194,7 +196,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textSize="25dp"
-                android:text="Score: " />
+                android:text="Score: 0" />
 
             <Button
                 android:id="@+id/updateScore2"

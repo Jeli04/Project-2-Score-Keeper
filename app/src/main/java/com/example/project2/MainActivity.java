@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Team info
         Button updateTeam1Score = (Button) findViewById(R.id.updateScore1);
+        Button updateTeam2Score = (Button) findViewById(R.id.updateScore2);
 
         updateTeam1Score.setOnClickListener(new View.OnClickListener() {
             int team1score = 0;
@@ -43,6 +44,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        updateTeam2Score.setOnClickListener(new View.OnClickListener() {
+            int team2score = 0;
+
+            @Override
+            public void onClick(View view) {
+                TextView firstTeamScore = (TextView) findViewById(R.id.score2);
+                team2score++;
+                firstTeamScore.setText("Score: " + team2score);
+            }
+        });
+
         // Team button functions
         changeGambit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 firstTeam.setImageResource(R.drawable.gambit);
             }
         });
-
+        /*
         changeSuperMassizeBlazes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,15 +71,16 @@ public class MainActivity extends AppCompatActivity {
                 firstTeam.setImageResource(R.drawable.SuperMassizeBlaze);
             }
         });
+        */
 
         changeAcend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ImageView firstTeam = (ImageView) findViewById(R.id.team1logo);
-                firstTeam.setImageResource(R.drawable.Acend);
+                firstTeam.setImageResource(R.drawable.acend);
             }
         });
-
+        /*
         changeG2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -123,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
                 firstTeam.setImageResource(R.drawable.HavanLiberty);
             }
         });
-
+        */
 
     }
 }
