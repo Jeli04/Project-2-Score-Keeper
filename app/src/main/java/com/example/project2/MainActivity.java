@@ -16,6 +16,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     Boolean select1 = false;
+    Boolean select2 = false;
 
     Button team1;
 
@@ -39,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
         Button changeKRU = (Button) findViewById(R.id.team8);
         Button changeKEYD = (Button) findViewById(R.id.team9);
         Button changeLiberty = (Button) findViewById(R.id.team10);
+        Button changeVisionStrikers = (Button) findViewById(R.id.team11);
+        Button changeF4Q = (Button) findViewById(R.id.team12);
+        Button changeZetaDivision = (Button) findViewById(R.id.team13);
+        Button changeCrazyRaccoons = (Button) findViewById(R.id.team14);
+        Button changePaperRax = (Button) findViewById(R.id.team15);
+
+
 
 
         teams.add(changeGambit);
@@ -61,11 +69,24 @@ public class MainActivity extends AppCompatActivity {
         teamImages.add(getResources().getDrawable(R.drawable.keyd));
         teams.add(changeLiberty);
         teamImages.add(getResources().getDrawable(R.drawable.havanliberty));
+        teams.add(changeVisionStrikers);
+        teamImages.add(getResources().getDrawable(R.drawable.visionstrikers));
+        teams.add(changeF4Q);
+        teamImages.add(getResources().getDrawable(R.drawable.f4q));
+        teams.add(changeZetaDivision);
+        teamImages.add(getResources().getDrawable(R.drawable.zetadivision));
+        teams.add(changeCrazyRaccoons);
+        teamImages.add(getResources().getDrawable(R.drawable.crazyraccoon));
+        teams.add(changePaperRax);
+        teamImages.add(getResources().getDrawable(R.drawable.paperrex));
+
 
         // Team info
         Button updateTeam1Score = (Button) findViewById(R.id.updateScore1);
         Button updateTeam2Score = (Button) findViewById(R.id.updateScore2);
-        ImageView selectTeam1 = (ImageView) findViewById(R.id.team1logo);
+        Button selectTeam1 = (Button) findViewById(R.id.team1logo);
+        Button selectTeam2 = (Button) findViewById(R.id.team2logo);
+
 
         updateTeam1Score.setOnClickListener(new View.OnClickListener() {
             int team1score = 0;
@@ -96,19 +117,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        selectTeam2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                select2 = true;
+            }
+        });
+
+
         for (int i = 0; i < teams.size(); i++) {
-            Drawable firstTeamLogo = teamImages.get(i);
-            System.out.println(firstTeamLogo.toString());
+            Drawable teamLogo = teamImages.get(i);
             teams.get(i).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ImageView firstTeam = (ImageView) findViewById(R.id.team1logo);
-                    firstTeam.setImageDrawable(firstTeamLogo);
+                    if(select1 == true){
+                        Button firstTeam = (Button) findViewById(R.id.team1logo);
+                        firstTeam.setBackground(teamLogo);
+                        select1 = false;
+                    }
+
+                    if(select2 == true){
+                        Button secondTeam = (Button) findViewById(R.id.team2logo);
+                        secondTeam.setBackground(teamLogo);
+                        select2 = false;
+                    }
                 }
             });
         }
-
-
-
     }
 }
